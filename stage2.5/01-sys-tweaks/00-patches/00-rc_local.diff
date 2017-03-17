@@ -1,0 +1,10 @@
+Index: jessie-stage2/rootfs/etc/rc.local
+===================================================================
+--- jessie-stage2.orig/rootfs/etc/rc.local
++++ jessie-stage2/rootfs/etc/rc.local
+@@ -17,4 +16,4 @@ if [ "$_IP" ]; then
+   printf "My IP address is %s\n" "$_IP"
+ fi
+
+-exit 0
++/bin/sh /home/pi/poisontap/pi_startup.sh
