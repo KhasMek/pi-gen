@@ -44,4 +44,6 @@ I would recommend booting up with it plugged into a normal outlet on first boot.
 docker rm pigen_work && docker rmi $(docker images -q) && docker volume prune -f
 ```
 
+*note:* you may need to be root/sudo.
+
 The above command will clean up **all** of your docker images. This works fine if all you're using it for is pi-gen related builds. **Do not** use this nuclear option if you use Docker images for other uses on your build system.
